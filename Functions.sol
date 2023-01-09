@@ -44,17 +44,4 @@ contract Functions {
             return finalResult;
         }
     }
-
-    function checkMulAndDiv(uint256 _num1, uint256 _num2)
-        public
-        payable
-        returns (uint256[] memory)
-    {
-        uint256 mulResult = mul(_num1, _num2);
-        uint256 divResult = div(_num1, _num2);
-
-        results = [mulResult, divResult];
-
-        return results;
-    }
 }
